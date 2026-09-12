@@ -621,7 +621,7 @@
 
         <form class="form" id="anfrage" novalidate
               data-endpoint="https://api.web3forms.com/submit"
-              data-key=""
+              data-key="86de5e31-456c-4b60-9471-07f2471f0491"
               data-empfaenger="">
 
           <div class="field" data-field>
@@ -665,7 +665,7 @@
           <button class="btn btn--accent" type="submit" id="f-send">Anfrage absenden</button>
 
           <p class="form__note" id="f-note">
-            Versanddienst noch nicht eingerichtet. Wie das geht, steht als Kommentar im Quelltext.
+            Versand wird konfiguriert...
           </p>
 
           <p class="form__status" id="f-status" role="status"></p>
@@ -731,11 +731,6 @@
 
      Ohne Schlüssel kann als Notlösung bei data-empfaenger eine Adresse
      stehen. Dann öffnet der Knopf das Mailprogramm des Besuchers.
-
-     Das Feld email wird bewusst mitgeschickt: Der Dienst nimmt es als
-     Antwortadresse und die kostenpflichtige Eingangsbestätigung setzt es
-     voraus. Kopie an eine zweite Adresse (ccemail) und Eingangsbestätigung
-     gibt es nur im Bezahltarif.
      ======================================================================== */
 
   var form   = document.getElementById("anfrage");
