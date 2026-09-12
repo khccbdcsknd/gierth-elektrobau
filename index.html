@@ -731,6 +731,11 @@
 
      Ohne Schlüssel kann als Notlösung bei data-empfaenger eine Adresse
      stehen. Dann öffnet der Knopf das Mailprogramm des Besuchers.
+
+     Das Feld email wird bewusst mitgeschickt: Der Dienst nimmt es als
+     Antwortadresse und die kostenpflichtige Eingangsbestätigung setzt es
+     voraus. Kopie an eine zweite Adresse (ccemail) und Eingangsbestätigung
+     gibt es nur im Bezahltarif.
      ======================================================================== */
 
   var form   = document.getElementById("anfrage");
@@ -837,8 +842,8 @@
           subject: "Neue Anfrage über die Website",
           from_name: "Website Gierth Elektrobau",
           replyto: daten.email,
+          email: daten.email,
           Name: daten.name,
-          "E-Mail": daten.email,
           Telefon: daten.telefon || "nicht angegeben",
           Nachricht: daten.nachricht
         })
